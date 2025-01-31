@@ -17,9 +17,9 @@ function App() {
     <ThemeProvider theme={theme}>
     <CssBaseline />
     <Header/>
-      <Box>
+      <Box sx={styles.container}>
         <Sidebar/>
-        <Box component={'main'}>
+        <Box component={'main'} sx={styles.mainSection}>
 
         </Box>
 
@@ -27,6 +27,23 @@ function App() {
     </ThemeProvider>
    </React.Fragment>
   )
+}
+
+/**
+ *  @type {import {SxProps  } from "@mui/material";}
+ */
+const styles = {
+  container:{
+      display: 'flex',
+      bgcolor:'neutral.light',
+      height:'calc(100% - 64px)'
+  },
+  mainSeciton:{
+    p:1,
+    width:'100%',
+    height:'100%',
+    overflow:'auto'
+  }
 }
 
 export default App
