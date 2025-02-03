@@ -1,0 +1,8 @@
+#sidebar-item {
+    height: 52px;
+    /* opacity: 90%; */
+    display: flex;
+    align-items: center;
+    padding: 0 25px;
+    cursor: pointer;
+}
