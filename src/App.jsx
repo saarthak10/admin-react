@@ -7,13 +7,12 @@ import '@fontsource/roboto/500.css';
 import '@fontsource/roboto/700.css';
 import theme from './config/theme'
 import { Box, CssBaseline, Drawer } from '@mui/material';
-import Sidebar from './components/Sidebar/Sidebar';
 import Header from './components/Header';
 
 function App() {
 
   const drawerWidth = 240;
-  const [openDrawer, setOpenDrawer] = useState(true)
+  const [openDrawer, setOpenDrawer] = useState(false)
 
 
   const handleDrawerToggle= ()=> {
@@ -35,9 +34,8 @@ function App() {
           }}
           open={openDrawer}
         >
-          <Sidebar />
+          {/* <Sidebar /> */}
         </Drawer>
-        <Sidebar/>
         <Box component={'main'} sx={styles.mainSection}>
 
         </Box>
